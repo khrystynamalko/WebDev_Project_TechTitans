@@ -1,48 +1,97 @@
- <!DOCTYPE html> 
- <html lang="en"> 
- <head>
-   <nav style="text-align:center;";>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-   </nav>
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchanted Locks - Home</title>
     <link rel="stylesheet" href="style.css">
-  <title>Enchanted Locks</title>
- </head>
- <body>
-  <header>
-    <p> <h1>Enchanted Locks</h1></p>
-    <img src="hair2.jpg" width="200" height="300" alt="Hair Salon"><img src="hair3.jpg" width="200" height="300" alt="Hair Salon"><img src="hair4.jpg" width="200" height="300" alt="Hair Salon"><img src="hair5.jpg" width="200" height="300" alt="Hair Salon">
-    <p> <h2>Welcome to Enchanted Locks, your magical hair journey!</h2> </p>
-    <p>Located right in the heart of the city, we specialize in high-energy, vibrant hair transformations. Whether you want a subtle refresh or a complete neon color shift, our mission is to make you look spectacular and leave with a smile!</p>
-    <article><h1>Our Salon Services & Prices</h1>
-    <section> 
-      <h2>Haircuts and styling</h2>
-      <p>Fresh cuts and beautiful styles made just for you! From classic layers to bold pixel crops and sharp bobs. We tailor every cut to your face shape and hair texture.</p>
-      <p>Price: From €55.00</p>
-    </section>
-    <section> 
-      <h2>Color and highlights</h2>
-      <p>Brighten your look with beautiful, vibrant colours. We specialize in custom balayage, full-head highlights, pastels, vivid neon transformations, and expert color corrections.</p>
-      <p>Price: From €95.00</p>
-    </section>
-    <section> 
-      <h2>Hair Treatments</h2>
-      <p>Give your hair the care and attention it deserves. Deeply repair damage with our signature hydration masks, bond-building treatments, and intensive scalp therapy rituals.</p>
-      <p><strong>Price:</strong> From €35.00</p>
-    </section>
-     <section> 
-      <h2>Special Occasions</h2>
-      <p>Gorgeous styles for weddings, debs, parties, and your most special structural moments. Includes intricate updos, vintage waves, and braided crown styles tailored to stay all night long.</p>
-      <p><strong>Price:</strong> From €65.00</p>
-    </section>
-    </article>
-    <article><h1>Beauty Tips</h1></article>
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="logo">Enchanted Locks</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <header class="hero-header">
+        <h1>Enchanted Locks</h1>
+        <p class="tagline">Welcome to Enchanted Locks, your magical hair journey!</p>
+        <p class="hero-description">
+            Located right in the heart of the city, we specialize in high-energy, vibrant hair transformations. 
+            Whether you want a subtle refresh or a complete neon color shift, our mission is to make you look spectacular and leave with a smile!
+        </p>
+    </header>
+
+    <main class="container">
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h2>Our Styling Gallery</h2>
+            <div class="image-gallery">
+                <img src="hair2.jpg" alt="Vivid Color Shift Styling">
+                <img src="hair3.jpg" alt="Precision Layered Cut">
+                <img src="hair4.jpg" alt="Custom Balayage Hair">
+                <img src="hair5.jpg" alt="Special Occasion Updo">
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <article class="services-article">
+            <h2 class="section-title">Our Salon Services &amp; Prices</h2>
+            
+            <div class="services-grid">
+                <section class="service-card">
+                    <h3>Haircuts &amp; Styling</h3>
+                    <p>Fresh cuts and beautiful styles made just for you! From classic layers to bold pixel crops and sharp bobs, we tailor every cut to your face shape and hair texture.</p>
+                    <p class="price">From €55.00</p>
+                </section>
+
+                <section class="service-card">
+                    <h3>Color &amp; Highlights</h3>
+                    <p>Brighten your look with beautiful, vibrant colours. We specialize in custom balayage, full-head highlights, pastels, vivid neon transformations, and expert color corrections.</p>
+                    <p class="price">From €95.00</p>
+                </section>
+
+                <section class="service-card">
+                    <h3>Hair Treatments</h3>
+                    <p>Give your hair the care and attention it deserves. Deeply repair damage with our signature hydration masks, bond-building treatments, and intensive scalp therapy rituals.</p>
+                    <p class="price">From €35.00</p>
+                </section>
+
+                <section class="service-card">
+                    <h3>Special Occasions</h3>
+                    <p>Gorgeous styles for weddings, debs, parties, and your most special moments. Includes intricate updos, vintage waves, and braided crown styles tailored to stay all night long.</p>
+                    <p class="price">From €65.00</p>
+                </section>
+            </div>
+        </article>
+
+        <!-- Beauty Tips Section -->
+        <article class="tips-article">
+            <h2 class="section-title">Nina's Top Beauty &amp; Care Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-box">
+                    <h3>1. Protect Color from Heat</h3>
+                    <p>Always apply a lightweight thermal heat protectant spray before blow-drying or using hot styling tools to keep your vibrant shades fresh.</p>
+                </div>
+                <div class="tip-box">
+                    <h3>2. Scalp Health Matters</h3>
+                    <p>Healthy hair starts at the root! Use a soft silicone scalp scrubber once a week to gently exfoliate product buildup and promote circulation.</p>
+                </div>
+                <div class="tip-box">
+                    <h3>3. Hydrate &amp; Repair</h3>
+                    <p>Switch to a sulfate-free, vegan shampoo and indulge in a weekly leave-in moisture mask to prevent split ends between salon visits.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
     <footer>
-        <p>&copy; 2026 Enchanted Locks Salon.</p>
+        <p>&copy; 2026 Enchanted Locks Salon. All rights reserved.</p>
     </footer>
 
-  </header>
-  </body>
-  </html> 
-
+</body>
+</html>
