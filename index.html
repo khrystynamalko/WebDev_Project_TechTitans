@@ -1,5 +1,4 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,10 +8,12 @@
 </head>
 <body>
 
-    <nav class="main-nav">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
         <div class="logo">Enchanted Locks</div>
         <div class="nav-links">
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html" class="active" aria-current="page">Home</a>
             <a href="about.html">About</a>
         </div>
     </nav>
@@ -26,22 +27,19 @@
         </p>
     </header>
 
-    <main class="container">
-        <!-- Gallery Section -->
+    <main id="main-content" class="container">
         <section class="gallery-section">
             <h2>Our Styling Gallery</h2>
             <div class="image-gallery">
-                <img src="hair2.jpg" alt="Vivid Color Shift Styling">
-                <img src="hair3.jpg" alt="Precision Layered Cut">
-                <img src="hair4.jpg" alt="Custom Balayage Hair">
-                <img src="hair5.jpg" alt="Special Occasion Updo">
+                <img src="hair2.jpg" alt="Long wavy hair dyed in bright neon pink and purple shades">
+                <img src="hair3.jpg" alt="Shoulder-length brunette hair styled in a precision layered cut">
+                <img src="hair4.jpg" alt="Soft golden blonde balayage waves blending from dark roots">
+                <img src="hair5.jpg" alt="Elegant braided updo hairstyle decorated with small hair pins">
             </div>
         </section>
 
-        <!-- Services Section -->
         <article class="services-article">
             <h2 class="section-title">Our Salon Services &amp; Prices</h2>
-            
             <div class="services-grid">
                 <section class="service-card">
                     <h3>Haircuts &amp; Styling</h3>
@@ -69,7 +67,6 @@
             </div>
         </article>
 
-        <!-- Beauty Tips Section -->
         <article class="tips-article">
             <h2 class="section-title">Nina's Top Beauty &amp; Care Tips</h2>
             <div class="tips-grid">
@@ -95,3 +92,4 @@
 
 </body>
 </html>
+
