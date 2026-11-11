@@ -248,3 +248,22 @@ footer {
         gap: 0.5rem;
     }
 }
+
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    background-color: #2b2b36;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: underline;
+    border-radius: 5px;
+    z-index: 2000;
+}
+
+.skip-link:focus {
+    top: 10px;
+    outline: 3px solid #f3b3cf;
+}
+
