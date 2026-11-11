@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +8,13 @@
 </head>
 <body>
 
-    <nav class="main-nav">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
         <div class="logo">Enchanted Locks</div>
         <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="about.html" class="active">About</a>
+            <a href="about.html" class="active" aria-current="page">About</a>
         </div>
     </nav>
 
@@ -22,11 +23,10 @@
         <p>Unleash your most vibrant self in a safe, joyful space.</p>
     </header>
 
-    <main class="container">
-        <!-- Story Section -->
+    <main id="main-content" class="container">
         <section class="story-section">
             <div class="story-image">
-                <img src="hair1.jpg" alt="Master Hairdresser Nina Thompson">
+                <img src="hair1.jpg" alt="Master Hairdresser Nina Thompson smiling inside Enchanted Locks salon">
             </div>
             <div class="story-text">
                 <h2>Our Story</h2>
@@ -35,7 +35,6 @@
             </div>
         </section>
 
-        <!-- Offerings & Community Section -->
         <section class="cards-grid">
             <div class="profile-card featured-member">
                 <h2>What We Offer Behind the Chair</h2>
@@ -55,24 +54,23 @@
             </div>
         </section>
 
-        <!-- Core Highlights Summary Grid -->
         <section class="highlights-section">
             <h2>Salon Highlights At A Glance</h2>
             <div class="highlights-grid">
                 <div class="highlight-item">
-                    <h4>✂️ Styles &amp; Treatments</h4>
+                    <h3><span aria-hidden="true">✂️</span> Styles &amp; Treatments</h3>
                     <p>Comprehensive availability for haircuts, custom coloring, and restorative scalp therapy.</p>
                 </div>
                 <div class="highlight-item">
-                    <h4>💡 Advice &amp; Booking</h4>
+                    <h3><span aria-hidden="true">💡</span> Advice &amp; Booking</h3>
                     <p>Expert home care recommendations and effortless appointment scheduling.</p>
                 </div>
                 <div class="highlight-item">
-                    <h4>🎨 Fashion &amp; Beauty</h4>
+                    <h3><span aria-hidden="true">🎨</span> Fashion &amp; Beauty</h3>
                     <p>Designed for anyone passionate about current hair trends and self-expression.</p>
                 </div>
                 <div class="highlight-item">
-                    <h4>🌱 Inclusive to All</h4>
+                    <h3><span aria-hidden="true">🌱</span> Inclusive to All</h3>
                     <p>Welcoming all hair textures, lengths, profiles, teenagers, and adults alike.</p>
                 </div>
             </div>
