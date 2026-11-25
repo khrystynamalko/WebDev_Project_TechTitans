@@ -31,6 +31,7 @@ body {
     outline: 3px solid #f3b3cf;
 }
 
+/* Flexbox Navigation */
 .main-nav {
     display: flex;
     justify-content: space-between;
@@ -59,13 +60,29 @@ body {
 }
 
 .nav-links a:hover,
-.nav-links a:focus-visible,
 .nav-links a.active {
+    color: #f3b3cf;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.nav-links a:focus-visible {
     color: #f3b3cf;
     text-decoration: underline;
     text-underline-offset: 4px;
     outline: 2px solid #f3b3cf;
     outline-offset: 4px;
+}
+
+@keyframes fadeSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero-header,
@@ -74,6 +91,7 @@ body {
     color: #ffffff;
     text-align: center;
     padding: 3.5rem 1.5rem;
+    animation: fadeSlideDown 0.6s ease-out;
 }
 
 .hero-header h1,
@@ -150,7 +168,7 @@ body {
 
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 2rem;
     margin-bottom: 2.5rem;
 }
@@ -208,6 +226,7 @@ body {
     margin-bottom: 0.5rem;
     font-size: 1.15rem;
 }
+
 
 .story-section {
     display: flex;
@@ -292,15 +311,17 @@ footer {
 
 @media (prefers-reduced-motion: reduce) {
     * {
+        animation: none !important;
         transition: none !important;
         transform: none !important;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     .main-nav {
         flex-direction: column;
         gap: 0.5rem;
+        padding: 1rem;
     }
 
     .nav-links a {
@@ -309,7 +330,13 @@ footer {
 
     .hero-header h1,
     .page-header h1 {
-        font-size: 2.1rem;
+        font-size: 2rem;
+    }
+
+    .image-gallery img {
+        width: 100%;
+        max-width: 320px;
+        height: 260px;
     }
 
     .story-section {
@@ -318,3 +345,35 @@ footer {
     }
 }
 
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .hero-header h1,
+    .page-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .image-gallery img {
+        width: 45%;
+        height: 280px;
+    }
+
+    .services-grid,
+    .highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .image-gallery img {
+        width: 220px;
+        height: 300px;
+    }
+}
